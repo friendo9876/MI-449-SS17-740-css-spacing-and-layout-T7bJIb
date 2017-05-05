@@ -110,16 +110,6 @@ tbody tr:hover {
   display: inline-block;
 }
 
-input {
-  padding: 12px 20px;
-  margin: 8px 0;
-  width: 300px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-radius: 0.25em;
-  font-weight: bold;
-}
-
 .btn-primary {
   background-color: #4caf50;
   width: 100px;
@@ -135,4 +125,33 @@ input {
 .btn-primary:hover {
   background-color: #5bc0de;
   border-color: #5bc0de;
+}
+
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  margin-top: 15px;
+  margin-left: 75px;
+}
+
+input {
+  display: inline-block;
+  float: left;
+  padding: 12px 20px;
+  margin-left: 15px;
+  margin-bottom: =15px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  label {
+    margin-left: 150px !important;
+  }
 }
